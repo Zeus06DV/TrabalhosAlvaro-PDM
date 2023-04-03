@@ -1,0 +1,153 @@
+Aluno: Álvaro Lucena de Freitas
+Sala: 3° ano B
+
+atv-1
+import 'dart:io';
+import 'dart:math';
+
+main(){
+
+
+double x2;
+  double x1;
+  double y2;
+  double y1;
+  double resto;
+  
+print("Informe o x2:");
+x1= double.parse(stdin.readLineSync());  
+ print("Informe o x1:");
+x2= double.parse(stdin.readLineSync()); 
+  print("Informe o y2:");
+y1= double.parse(stdin.readLineSync()); 
+  print("Informe o y1:");
+y2= double.parse(stdin.readLineSync()); 
+
+res = sqrt(((x2-x1)*(x2-x1)) + ((y2-y1)*(y2-y1)));
+  print('O custo para o consumidor, é igual a: $resto');
+ 
+}
+
+atv-2
+import 'dart:io';
+void main() {
+print('Digite um numero:');
+  var a = double.parse(stdin.readLineSync()!);
+  
+  print('Digite um segundo numero:');
+  var b = double.parse(stdin.readLineSync()!);
+  
+  print('Digite um terceiro numero:');
+  var c = double.parse(stdin.readLineSync()!);
+
+  var r = (a+b)*(a+b);
+   var s= (b+c)*(b+c);
+
+  var d= r+s/2;
+
+    print('Resultado: $d');
+}
+
+atv-3
+import 'dart:io';
+import 'dart:math';
+
+main() {
+  double n1; //
+  double n2;
+  double n3;
+  double total;
+
+  int p1=2;
+  int p2=3;
+  int p3=5;
+  
+  print("Informe a primeira nota: ");
+  n1=double.parse(stdin.readLineSync());
+  print("Informe a segunda nota: ");
+ n2=double.parse(stdin.readLineSync());  
+  print("Informe a terceira nota: ");
+ n3=double.parse(stdin.readLineSync());
+  
+  total = ((n1*p1)+(n2*p2)+(n3*p3) / (p1+p2+p3));
+    print("Sua nota é: $total");
+}
+
+atv-4
+import 'dart:io';
+
+void main(){
+  double seg;
+  double horas;
+  double minutos;
+  double segundos;
+
+   print("Informe a quantidade de tempo em segundos: ");
+     seg=double.parse(stdin.readLineSync());
+
+  horas = (seg / 3600);
+  minutos = (seg / 60);
+  segundos = (seg);
+
+  print("Seu tempo em horas é igual a: $horas");
+  print("Seu tempo em minutos é igual a: $minutos");
+  print("Seu tempo em segundos é igual a: $segundos");
+  
+}
+
+atv-5
+import 'dart:io';
+
+void main(){
+  double CF;
+  double PD;
+  double PI;
+  double PF;
+  
+  print("Diga o valor de fábrica de seu carro: ");
+    CF=double.parse(stdin.readLineSync());
+
+  PD = CF - (CF * 0.28);
+  PI = CF - (CF * 0.45);
+  PF = (CF + PD + PI);
+
+  print("O valor final de seu carro é igual a: $PF.");
+}
+
+atv-6
+import 'dart:io';
+import 'dart:math';
+ 
+main(){
+ 
+  double a;
+  double b;
+  double c;
+  double d;
+  double e;
+  double f;
+  double x,y;
+  
+print("Informe o valor de A:");
+a = double.parse(stdin.readLineSync());  
+ print("Informe o valor de B:");
+b = double.parse(stdin.readLineSync()); 
+  print("Informe o valor de C:");
+c = double.parse(stdin.readLineSync()); 
+  print("Informe o valor de D:");
+d = double.parse(stdin.readLineSync()); 
+    print("Informe o valor de E:");
+e = double.parse(stdin.readLineSync()); 
+    print("Informe o valor de F:");
+f = double.parse(stdin.readLineSync()); 
+  
+ 
+x = (c*e)-(b*f)/(a*e)-(b*d);
+y = (a*f)-(c*d)/(a*e)-(b*d);
+ 
+ 
+  print('O valor de X, é igual a: $x');
+    print('O valor de Y, é igual a: $y');
+  
+  
+}
